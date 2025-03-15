@@ -71,15 +71,17 @@ const setRoutes = (app) => {
         }
     };
 
-    // Proper Swagger UI setup - only authenticate the main page, not the assets
-    app.get('/api-docs', validateSubscriptionKey);  // Only authenticate this specific route
-    app.use('/api-docs', swaggerUi.serve);          // Serve UI assets without authentication
+    // Comment out or remove this line to disable authentication for the main page
+    // app.get('/api-docs', validateSubscriptionKey);  // This line is removed/commented
+
+    // Keep the standard Swagger UI setup
+    app.use('/api-docs', swaggerUi.serve);
     app.get('/api-docs', swaggerUi.setup(swaggerDocs, {
         explorer: true,
         customSiteTitle: "Willamette Valley Temple API"
     }));
 
-    // Debug routes
+    // Keep your other routes as they are
     app.get('/test', (req, res) => {
         res.send('API server is working!');
     });
