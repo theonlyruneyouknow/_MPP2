@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-nodemon-app",
+  "version": "1.0.0",
+  "description": "A Node.js application with automatic server restarts using nodemon.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

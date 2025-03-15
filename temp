@@ -1,0 +1,11 @@
+info: {
+            title: 'Willamette Valley Temple',  // Changed from 'API Documentation'
+            version: '1.0.0',
+            description: 'Serving the Saints in the Willamette Valley',  // Changed from 'API Documentation'
+            summary: 'A team project in the class 341, Winter 2025',  // Changed from 'API Documentation'
+            contact: {
+                name:'Rune Larsen',
+                email:'theonlyrune@byui.edu'
+            },
+            
+        },
